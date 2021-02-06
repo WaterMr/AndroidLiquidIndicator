@@ -6,26 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:layout_width="102dp"
-        android:layout_height="302dp"
-        android:layout_marginLeft="160dp"
-        android:layout_marginTop="100dp"
-        android:background="#F6F8FA">
-
-        <ImageView
-            android:id="@+id/iv_pointer"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"></ImageView>
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:scaleType="fitXY"
-            android:src="@mipmap/xitou"></ImageView>
-    </FrameLayout>
-
     <SeekBar
         android:id="@+id/seekbar"
         android:layout_width="match_parent"
@@ -40,4 +20,33 @@
         android:text="0 %"
         android:textColor="#000"
         android:textSize="25dp"></TextView>
+    <Button
+        android:layout_marginTop="480dp"
+        android:onClick="Show30"
+        android:layout_width="wrap_content"
+        android:text="30"
+        android:layout_marginLeft="120dp"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <Button
+        android:id="@+id/add_button"
+        android:layout_marginTop="480dp"
+        android:onClick="Show80"
+        android:layout_marginLeft="240dp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:text="80"
+        android:layout_height="wrap_content">
+    </Button>
+
+    <com.cwj.test.Tip
+        android:id="@+id/test_tip"
+        android:layout_width="102dp"
+        android:layout_height="302dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="100dp"
+        >
+
+    </com.cwj.test.Tip>
 </RelativeLayout>
